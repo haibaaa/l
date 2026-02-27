@@ -1,0 +1,30 @@
+
+γ = 0
+V(S0) = 4.0000
+V(S1) = 7.0000
+V(S2) = 1.0000
+took 2 iterations
+
+γ = 0.1
+V(S0) = 4.4734
+V(S1) = 7.4437
+V(S2) = 1.3831
+took 8 iterations
+
+γ = 0.01
+V(S0) = 4.0434
+V(S1) = 7.0404
+V(S2) = 1.0344
+took 5 iterations
+
+γ = 0.001
+V(S0) = 4.0043
+V(S1) = 7.0040
+V(S2) = 1.0034
+took 4 iterations
+
+γ = 0.3
+V(S0) = 5.7928
+V(S1) = 8.7054
+V(S2) = 2.5198
+took 14 iterations
