@@ -1,0 +1,66 @@
+nsh l/fis/l2 on  main *?❯ hashcat -m 100 -a 0 hashes.txt dictionary.txt --outfile cracked.txt --outfile-format 2
+
+hashcat (7.1.2) starting
+
+OpenCL API (OpenCL 3.0 PoCL 7.1  Linux, Release, RELOC, SPIR-V, LLVM 21.1.2, SLEEF, DISTRO, REMOTE, POCL_DEBUG) - Platform #1 [The pocl project]
+================================================================================================================================================
+* Device #01: cpu-skylake-avx512-11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz, 9791/19583 MB (9791 MB allocatable), 8MCU
+
+Minimum password length supported by kernel: 0
+Maximum password length supported by kernel: 256
+
+Hashes: 10000 digests; 10000 unique digests, 1 unique salts
+Bitmaps: 16 bits, 65536 entries, 0x0000ffff mask, 262144 bytes, 5/13 rotates
+Rules: 1
+
+Optimizers applied:
+* Zero-Byte
+* Early-Skip
+* Not-Salted
+* Not-Iterated
+* Single-Salt
+* Raw-Hash
+
+ATTENTION! Pure (unoptimized) backend kernels selected.
+Pure kernels can crack longer passwords, but drastically reduce performance.
+If you want to switch to optimized kernels, append -O to your commandline.
+See the above message to find out about the exact limits.
+
+Watchdog: Temperature abort trigger set to 90c
+
+Host memory allocated for this attack: 514 MB (17530 MB free)
+
+Dictionary cache built:
+* Filename..: dictionary.txt
+* Passwords.: 10000
+* Bytes.....: 70000
+* Keyspace..: 10000
+* Runtime...: 0 secs
+
+Approaching final keyspace - workload adjusted.
+
+
+Session..........: hashcat
+Status...........: Cracked
+Hash.Mode........: 100 (SHA1)
+Hash.Target......: hashes.txt
+Time.Started.....: Sat Mar 28 22:50:02 2026 (1 sec)
+Time.Estimated...: Sat Mar 28 22:50:03 2026 (0 secs)
+Kernel.Feature...: Pure Kernel (password length 0-256 bytes)
+Guess.Base.......: File (dictionary.txt)
+Guess.Queue......: 1/1 (100.00%)
+Speed.#01........:    13462 H/s (0.93ms) @ Accel:1024 Loops:1 Thr:1 Vec:16
+Recovered........: 10000/10000 (100.00%) Digests (total), 10000/10000 (100.00%) Digests (new)
+Remaining........: 0 (0.00%) Digests
+Recovered/Time...: CUR:N/A,N/A,N/A AVG:N/A,N/A,N/A (Min,Hour,Day)
+Progress.........: 10000/10000 (100.00%)
+Rejected.........: 0/10000 (0.00%)
+Restore.Point....: 8192/10000 (81.92%)
+Restore.Sub.#01..: Salt:0 Amplifier:0-1 Iteration:0-1
+Candidate.Engine.: Device Generator
+Candidates.#01...: vhveat -> eyszjj
+Hardware.Mon.#01.: Temp: 52c Util: 22%
+
+Started: Sat Mar 28 22:49:00 2026
+Stopped: Sat Mar 28 22:50:03 2026
+
