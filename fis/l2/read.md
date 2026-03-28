@@ -11,14 +11,14 @@ The search space was defined and populated using a custom Python script. This en
 * **Execution Command:** `uv run dictionary_gen.py`
 * **Primary Output:** `dictionary.txt`
 
-!(./gen.png)
+![](./gen.png)
 
 ### 2.2 Data Verification
 Prior to the attack, a quantitative analysis of the input files was performed to verify the scale of the target hashes against the generated dictionary.
 
 * **Files Analyzed:** `hashes.txt`, `dictionary.txt`
 
-!(./ss.png)
+![](./ss.png)
 
 ### 2.3 Hashcat Configuration
 Hashcat (v7.1.2).
@@ -29,7 +29,7 @@ Hashcat (v7.1.2).
 hashcat -m 100 -a 0 hashes.txt dictionary.txt --outfile cracked.txt --outfile-format 2
 ```
 
-!(./hashcat.png)
+![](./hashcat.png)
 > [!note] since the output was too big please refer to ./hashcatout.txt
 
 ---
